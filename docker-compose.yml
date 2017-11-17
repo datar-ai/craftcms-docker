@@ -1,5 +1,5 @@
 web:
-  image: wyveo/craftcms-docker:latest
+  image: deliah/craftcms-docker:latest
   ports:
     - 80:80
   volumes:
