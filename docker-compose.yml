@@ -36,4 +36,4 @@ mariadb:
 redis:
   image: redis:3.2.11-alpine
   volumes:
-    - /data:/data
+    - /data
