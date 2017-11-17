@@ -1,6 +1,6 @@
 [![Docker Hub; wyveo/craftcms-docker](https://img.shields.io/badge/docker%20hub-%20wyveo%2Fcraftcms--docker-blue.svg)](https://hub.docker.com/r/wyveo/craftcms-docker/) ![License MIT](https://img.shields.io/badge/license-MIT-blue.svg)
 ## Introduction
-This is a  [Craft CMS](https://craftcms.com/) / [Craft 3 Beta](https://craftcms.com/3) base running on our [nginx-php-fpm](https://hub.docker.com/r/wyveo/nginx-php-fpm/) docker image.
+This is a  [Craft CMS](https://craftcms.com/) / [Craft 3 Beta](https://craftcms.com/3) base running on [nginx-php-fpm](https://hub.docker.com/r/wyveo/nginx-php-fpm/) docker image.
 #### Versioning
 | Docker Tag | Git Branch | Craft Release | Database | Caching |
 |-----|-------|-----|--------|--------|
@@ -16,7 +16,7 @@ Features:
 To run, clone the git repo and run `docker-compose up`:
 #### Craft - [![version latest](https://img.shields.io/badge/version-latest-blue.svg)](https://craftcms.com/) [![](https://images.microbadger.com/badges/image/wyveo/craftcms-docker.svg)](http://microbadger.com/images/wyveo/craftcms-docker "Get your own image badge on microbadger.com")
 ```
-$ git clone https://github.com/wyveo/craftcms-docker.git
+$ git clone https://github.com/datar-ai/craftcms-docker.git
 $ cd craftcms-docker
 $ sudo docker-compose up -d
 ```
@@ -25,7 +25,7 @@ navigate to `http://<HOSTNAME>/admin` to begin installing Craft.
 
 #### Craft 3 Beta - [![version craft3beta](https://img.shields.io/badge/version-craft3beta-blue.svg)](https://craftcms.com/3) [![](https://images.microbadger.com/badges/image/wyveo/craftcms-docker:craft3beta.svg)](https://microbadger.com/images/wyveo/craftcms-docker:craft3beta "Get your own image badge on microbadger.com")
 ```
-$ git clone -b craft3beta --single-branch https://github.com/wyveo/craftcms-docker.git
+$ git clone -b craft3beta --single-branch https://github.com/datar-ai/craftcms-docker.git
 $ cd craftcms-docker
 $ sudo docker-compose up -d
 ```
