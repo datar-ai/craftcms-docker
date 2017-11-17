@@ -1,3 +1,8 @@
+## [0.3.1.b] - 11-18-2017
+### Update
+- Upgrade Craft to 2.6.2997
+- Fix K8S issues
+
 ## [0.3.1] - 03-11-2017
 ### Update
 - Upgrade Craft to 2.6.2994
