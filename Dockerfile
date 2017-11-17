@@ -8,8 +8,7 @@ ENV CRAFT_VERSION=2.6 CRAFT_BUILD=2997
 ENV CRAFT_ZIP=Craft-$CRAFT_VERSION.$CRAFT_BUILD.zip
 
 # Remove default webroot files & set PHP session handler to Redis
-RUN rm -rf /usr/share/nginx/html/* && \
-sed -i -e "s/memory_limit\s*=\s*.*/memory_limit = 256M/g" ${php_conf} && \
+RUN sed -i -e "s/memory_limit\s*=\s*.*/memory_limit = 256M/g" ${php_conf} && \
 sed -i -e "s/session.save_handler\s*=\s*.*/session.save_handler = redis/g" ${php_conf} && \
 sed -i -e "s/;session.save_path\s*=\s*.*/session.save_path = \"\${REDIS_PORT_6379_TCP}\"/g" ${php_conf}
 
